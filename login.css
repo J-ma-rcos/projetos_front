@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to bottom right, #ff7582, #355c7d);
+} 
+
+.container{
+    background-color: #725A7A;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: fixed;
+    align-items: center;
+    align-content: center;
+}
+.container .user{
+    position: relative;
+}
+h3{
+    font-size: 30px;
+    color: #FFF;
+    padding: 0;
+    letter-spacing: 1px;
+    text-align:center;
+}
+.container .user input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.container .user label{
+    position: absolute;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.container .user input:focus ~ label,
+.container .user input:valid ~ label{
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #725A7A;
+}
+.buttonA{
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #FF7582;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: none;
+    color: #FF7582;
+    cursor: pointer;
+}
+.buttonB{
+    margin-left: 163px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #FF7582;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    background: none;
+    color: #FF7582;
+    cursor: pointer;
+}
+.buttonA:hover{
+    color: #FFF;
+}
+.buttonB:hover{
+    color: #FFF;
+}
+.text{
+    margin-top: 30px;
+    text-align: center;
+    color: #FFF;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #FF7582;
+}
